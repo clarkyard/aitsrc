@@ -1,0 +1,972 @@
+[
+  {
+    "studentId": "ABS26B00034Y",
+    "department": "Business Administration",
+    "email": "abs26b00034y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00035Y",
+    "department": "Engineering",
+    "email": "abs26b00035y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00036Y",
+    "department": "Business Administration",
+    "email": "abs26b00036y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00037Y",
+    "department": "Business Administration",
+    "email": "abs26b00037y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00038Y",
+    "department": "Business Administration",
+    "email": "abs26b00038y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00039Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00039y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00040Y",
+    "department": "Business Administration",
+    "email": "abs26b00040y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00041Y",
+    "department": "Business Administration",
+    "email": "abs26b00041y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00042Y",
+    "department": "Business Administration",
+    "email": "abs26b00042y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00043Y",
+    "department": "Business Administration",
+    "email": "abs26b00043y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00044Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00044y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00045Y",
+    "department": "Business Administration",
+    "email": "abs26b00045y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00046Y",
+    "department": "Business Administration",
+    "email": "abs26b00046y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00047Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00047y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00048Y",
+    "department": "Business Administration",
+    "email": "abs26b00048y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00049Y",
+    "department": "Business Administration",
+    "email": "abs26b00049y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00051Y",
+    "department": "Business Administration",
+    "email": "abs26b00051y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00052Y",
+    "department": "Business Administration",
+    "email": "abs26b00052y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00053Y",
+    "department": "Business Administration",
+    "email": "abs26b00053y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00054Y",
+    "department": "Business Administration",
+    "email": "abs26b00054y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00055Y",
+    "department": "Business Administration",
+    "email": "abs26b00055y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00056Y",
+    "department": "Business Administration",
+    "email": "abs26b00056y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00057Y",
+    "department": "Business Administration",
+    "email": "abs26b00057y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00058Y",
+    "department": "Business Administration",
+    "email": "abs26b00058y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00059Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00059y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00060Y",
+    "department": "Business Administration",
+    "email": "abs26b00060y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00061Y",
+    "department": "Business Administration",
+    "email": "abs26b00061y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00062Y",
+    "department": "Business Administration",
+    "email": "abs26b00062y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00063Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00063y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00064Y",
+    "department": "Business Administration",
+    "email": "abs26b00064y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00065Y",
+    "department": "Business Administration",
+    "email": "abs26b00065y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00066Y",
+    "department": "Business Administration",
+    "email": "abs26b00066y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00067Y",
+    "department": "Business Administration",
+    "email": "abs26b00067y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00068Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00068y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00069Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00069y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00070Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00070y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00071Y",
+    "department": "Business Administration",
+    "email": "abs26b00071y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00072Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00072y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00073Y",
+    "department": "Business Administration",
+    "email": "abs26b00073y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00074Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00074y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00075Y",
+    "department": "Computer Science & IT",
+    "email": "abs26b00075y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00076Y",
+    "department": "Business Administration",
+    "email": "abs26b00076y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00077Y",
+    "department": "Business Administration",
+    "email": "abs26b00077y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00078Y",
+    "department": "Business Administration",
+    "email": "abs26b00078y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ABS26B00079Y",
+    "department": "Business Administration",
+    "email": "abs26b00079y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00084Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00084y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00085Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00085y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00086Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00086y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00087Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00087y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00088Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00088y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00089Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00089y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00090Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00090y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00091Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00091y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00092Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00092y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00093Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00093y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00094Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00094y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00095Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00095y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00096Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00096y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00097Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00097y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00098Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00098y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00099Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00099y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00100Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00100y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00101Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00101y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00102Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00102y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00103Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00103y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00104Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00104y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00105Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00105y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00106Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00106y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00107Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00107y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00108Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00108y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00109Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00109y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00110Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00110y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00111Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00111y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00112Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00112y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00113Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00113y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00114Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00114y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00115Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00115y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00116Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00116y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00117Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00117y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00118Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00118y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00119Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00119y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00120Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00120y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00121Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00121y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00122Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00122y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00123Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00123y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00124Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00124y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00125Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00125y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00126Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00126y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00127Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00127y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00128Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00128y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00129Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00129y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00130Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00130y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00131Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00131y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00132Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00132y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00133Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00133y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00134Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00134y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00135Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00135y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00136Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00136y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00137Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00137y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00138Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00138y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00139Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00139y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00140Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00140y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00141Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00141y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00142Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00142y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00143Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00143y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00144Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00144y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00145Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00145y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00146Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00146y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00147Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00147y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00148Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00148y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00149Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00149y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00150Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00150y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00151Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00151y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00152Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00152y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00153Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00153y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00154Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00154y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00155Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00155y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00156Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00156y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00157Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00157y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00158Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00158y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00159Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00159y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00160Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00160y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00161Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00161y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00162Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00162y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00163Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00163y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00164Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00164y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00165Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00165y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00166Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00166y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00167Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00167y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00168Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00168y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00169Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00169y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00170Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00170y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ADS26B00171Y",
+    "department": "Computer Science & IT",
+    "email": "ads26b00171y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00056Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00056y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00057Y",
+    "department": "Engineering",
+    "email": "eng26b00057y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00058Y",
+    "department": "Engineering",
+    "email": "eng26b00058y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00059Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00059y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00060Y",
+    "department": "Engineering",
+    "email": "eng26b00060y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00061Y",
+    "department": "Engineering",
+    "email": "eng26b00061y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00062Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00062y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00063Y",
+    "department": "Engineering",
+    "email": "eng26b00063y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00064Y",
+    "department": "Engineering",
+    "email": "eng26b00064y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00065Y",
+    "department": "Engineering",
+    "email": "eng26b00065y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00066Y",
+    "department": "Engineering",
+    "email": "eng26b00066y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00067Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00067y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00068Y",
+    "department": "Engineering",
+    "email": "eng26b00068y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00069Y",
+    "department": "Engineering",
+    "email": "eng26b00069y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00070Y",
+    "department": "Engineering",
+    "email": "eng26b00070y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00071Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00071y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00072Y",
+    "department": "Engineering",
+    "email": "eng26b00072y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00073Y",
+    "department": "Engineering",
+    "email": "eng26b00073y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00074Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00074y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00075Y",
+    "department": "Engineering",
+    "email": "eng26b00075y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00076Y",
+    "department": "Engineering",
+    "email": "eng26b00076y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00077Y",
+    "department": "Engineering",
+    "email": "eng26b00077y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00078Y",
+    "department": "Engineering",
+    "email": "eng26b00078y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00079Y",
+    "department": "Engineering",
+    "email": "eng26b00079y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00080Y",
+    "department": "Engineering",
+    "email": "eng26b00080y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00081Y",
+    "department": "Engineering",
+    "email": "eng26b00081y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00082Y",
+    "department": "Engineering",
+    "email": "eng26b00082y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00083Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00083y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00084Y",
+    "department": "Engineering",
+    "email": "eng26b00084y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00085Y",
+    "department": "Engineering",
+    "email": "eng26b00085y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00086Y",
+    "department": "Engineering",
+    "email": "eng26b00086y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00087Y",
+    "department": "Engineering",
+    "email": "eng26b00087y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00088Y",
+    "department": "Engineering",
+    "email": "eng26b00088y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00089Y",
+    "department": "Engineering",
+    "email": "eng26b00089y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00090Y",
+    "department": "Engineering",
+    "email": "eng26b00090y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00091Y",
+    "department": "Engineering",
+    "email": "eng26b00091y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00092Y",
+    "department": "Engineering",
+    "email": "eng26b00092y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00093Y",
+    "department": "Engineering",
+    "email": "eng26b00093y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00094Y",
+    "department": "Engineering",
+    "email": "eng26b00094y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00095Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00095y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00096Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00096y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00097Y",
+    "department": "Engineering",
+    "email": "eng26b00097y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00098Y",
+    "department": "Engineering",
+    "email": "eng26b00098y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00099Y",
+    "department": "Engineering",
+    "email": "eng26b00099y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00100Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00100y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00101Y",
+    "department": "Engineering",
+    "email": "eng26b00101y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00102Y",
+    "department": "Engineering",
+    "email": "eng26b00102y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00103Y",
+    "department": "Engineering",
+    "email": "eng26b00103y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00104Y",
+    "department": "Engineering",
+    "email": "eng26b00104y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00105Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00105y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00106Y",
+    "department": "Engineering",
+    "email": "eng26b00106y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00107Y",
+    "department": "Engineering",
+    "email": "eng26b00107y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00108Y",
+    "department": "Engineering",
+    "email": "eng26b00108y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00109Y",
+    "department": "Engineering",
+    "email": "eng26b00109y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00110Y",
+    "department": "Engineering",
+    "email": "eng26b00110y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00111Y",
+    "department": "Engineering",
+    "email": "eng26b00111y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00112Y",
+    "department": "Engineering",
+    "email": "eng26b00112y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00113Y",
+    "department": "Engineering",
+    "email": "eng26b00113y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00114Y",
+    "department": "Computer Science & IT",
+    "email": "eng26b00114y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00115Y",
+    "department": "Engineering",
+    "email": "eng26b00115y@student.ait.edu.gh"
+  },
+  {
+    "studentId": "ENG26B00116Y",
+    "department": "Engineering",
+    "email": "eng26b00116y@student.ait.edu.gh"
+  }
+]

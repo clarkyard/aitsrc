@@ -1,0 +1,52 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+model Voter {
+  studentId  String    @id
+  hasVoted   Boolean   @default(false)
+  votedAt    DateTime?
+  department String
+  email      String    @default("")
+}
+
+model Ballot {
+  id             Int      @id @default(autoincrement())
+  anonymousToken String   @unique
+  choices        String // Encrypted JSON string of selections
+  castAt         DateTime @default(now())
+  hash           String
+  prevHash       String
+}
+
+model AuditLog {
+  id        Int      @id @default(autoincrement())
+  action    String
+  timestamp DateTime @default(now())
+  details   String
+}
+
+model ElectionState {
+  key   String @id
+  value String
+}
+
+model DecryptionShare {
+  id          Int      @id @default(autoincrement())
+  adminId     String   @unique
+  share       String
+  submittedAt DateTime @default(now())
+}
+
+model ReceiptLookup {
+  id        Int      @id @default(autoincrement())
+  tokenHash String   @unique
+  choices   String // JSON string of plaintext choices
+  createdAt DateTime @default(now())
+}
