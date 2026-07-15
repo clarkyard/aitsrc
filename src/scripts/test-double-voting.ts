@@ -1,8 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../lib/db";
 import { castVote, startElection } from "../lib/actions/election";
 import { seedDatabase } from "../lib/actions/auth";
-
-const prisma = new PrismaClient();
 
 async function main() {
   console.log("Initializing Double-Voting Concurrency Test...");
