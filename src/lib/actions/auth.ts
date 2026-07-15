@@ -11,7 +11,11 @@ export interface UserSession {
 
 import votersRegistry from "../voters_registry.json";
 
+let databaseSeeded = false;
+
 export async function seedDatabase() {
+  if (databaseSeeded) return;
+  
   const voterCount = await prisma.voter.count();
   if (voterCount < 50) {
     // Clear old mock databases to ensure a clean official transition
@@ -41,6 +45,7 @@ export async function seedDatabase() {
       },
     });
   }
+  databaseSeeded = true;
 }
 
 export async function getSession(): Promise<UserSession | null> {
