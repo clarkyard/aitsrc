@@ -511,3 +511,48 @@ export async function getLiveStandings() {
     byDepartment
   };
 }
+
+export async function resetElection(password: string): Promise<{ success: boolean; error?: string }> {
+  if (password !== "h#AbDY9%^8Y%L$SC^G79aBdricrX7Cusg#p") {
+    return { success: false, error: "Incorrect reset password." };
+  }
+  
+  try {
+    // 1. Clear database tables related to current election
+    await prisma.ballot.deleteMany();
+    await prisma.decryptionShare.deleteMany();
+    await prisma.receiptLookup.deleteMany();
+    
+    await prisma.voter.updateMany({
+      data: {
+        hasVoted: false,
+        votedAt: null
+      }
+    });
+    
+    await prisma.electionState.deleteMany({
+      where: {
+        key: { in: ["decrypted_results", "public_key", "election_key"] }
+      }
+    });
+
+    await prisma.electionState.upsert({
+      where: { key: "polls_status" },
+      update: { value: "NOT_STARTED" },
+      create: { key: "polls_status", value: "NOT_STARTED" }
+    });
+
+    // 2. Add audit log
+    await prisma.auditLog.create({
+      data: {
+        action: "ELECTION_RESET",
+        details: "Election fully reset. All ballots, voter records, and cryptographic keys cleared."
+      }
+    });
+
+    return { success: true };
+  } catch (err: any) {
+    console.error("Failed to reset election:", err);
+    return { success: false, error: err.message || "Failed to reset election." };
+  }
+}

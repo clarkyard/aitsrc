@@ -11,7 +11,8 @@ import {
   openPolls,
   submitDecryptionShare, 
   getAuditTrail, 
-  getVotersTurnout
+  getVotersTurnout,
+  resetElection
 } from "@/lib/actions/election";
 import { CANDIDATES } from "@/lib/constants";
 import { 
@@ -52,6 +53,7 @@ export default function AdminDashboard() {
   const [actionLoading, setActionLoading] = useState(false);
   const [actionError, setActionError] = useState("");
   const [actionSuccess, setActionSuccess] = useState("");
+  const [resetPasswordInput, setResetPasswordInput] = useState("");
   
   // Utility states
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
@@ -243,6 +245,32 @@ export default function AdminDashboard() {
       await loadAllData();
     } catch (err: any) {
       setActionError(err.message || "Failed to start election.");
+    }
+    setActionLoading(false);
+  };
+
+  const handleResetElection = async () => {
+    if (!resetPasswordInput) {
+      setActionError("Please enter the reset password.");
+      return;
+    }
+    if (!confirm("Are you sure you want to RESET the entire election? This will clear all ballots, voter records, decryption shares, and keys. This action is IRREVERSIBLE.")) return;
+
+    setActionLoading(true);
+    setActionError("");
+    setActionSuccess("");
+    try {
+      const res = await resetElection(resetPasswordInput);
+      if (res.success) {
+        setActionSuccess("Election successfully reset to NOT_STARTED. All data has been cleared.");
+        setResetPasswordInput("");
+        setGeneratedShares([]);
+        await loadAllData();
+      } else {
+        setActionError(res.error || "Failed to reset election.");
+      }
+    } catch (err: any) {
+      setActionError(err.message || "Failed to reset election.");
     }
     setActionLoading(false);
   };
@@ -528,6 +556,32 @@ export default function AdminDashboard() {
                   disabled={actionLoading || electionState?.status === "OPEN" || electionState?.status === "DECIPHERED"}
                 >
                   Turn on Live
+                </button>
+              </div>
+            </div>
+
+            <div style={{ flex: 1, minWidth: "280px", padding: "1.5rem", border: "1px dashed rgba(239,68,68,0.3)", borderRadius: "var(--radius-md)", background: "rgba(255,255,255,0.3)" }} className="glass-panelStat">
+              <h3 style={{ fontSize: "1.1rem", marginBottom: "0.5rem" }}>3. Reset Election & Polls</h3>
+              <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "1.25rem" }}>
+                Wipe all ballots, voter logs, decryption shares, and reset the election state to Not Started. Requires password.
+              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                <input 
+                  type="password" 
+                  placeholder="Enter reset password" 
+                  className="form-input"
+                  value={resetPasswordInput}
+                  onChange={(e) => setResetPasswordInput(e.target.value)}
+                  style={{ fontSize: "0.85rem", padding: "0.4rem 0.75rem" }}
+                  disabled={actionLoading}
+                />
+                <button 
+                  className="btn btn-danger" 
+                  onClick={handleResetElection}
+                  disabled={actionLoading}
+                  style={{ width: "100%" }}
+                >
+                  Reset All Polls
                 </button>
               </div>
             </div>

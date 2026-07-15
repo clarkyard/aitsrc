@@ -99,12 +99,15 @@ export async function loginVoter(studentId: string): Promise<{ success: boolean;
   return { success: true };
 }
 
-export async function loginAdmin(adminId: string): Promise<{ success: boolean; error?: string }> {
+export async function loginAdmin(adminId: string, password?: string): Promise<{ success: boolean; error?: string }> {
   await seedDatabase();
   
-  const validAdmins = ["admin1", "admin2", "admin3"];
-  if (!validAdmins.includes(adminId)) {
+  if (adminId !== "admin1") {
     return { success: false, error: "Invalid admin credentials." };
+  }
+  
+  if (password !== " ^FUmVG&a%*%s#QTrSpPcP3WxLygcAaVsvy7") {
+    return { success: false, error: "Incorrect admin password." };
   }
   
   const cookieStore = await cookies();

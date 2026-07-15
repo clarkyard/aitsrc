@@ -43,6 +43,7 @@ export default function LoginPage() {
 
   // Admin SSO states
   const [selectedAdmin, setSelectedAdmin] = useState("admin1");
+  const [adminPassword, setAdminPassword] = useState("");
   const [adminError, setAdminError] = useState("");
   const [adminLoading, setAdminLoading] = useState(false);
 
@@ -99,9 +100,15 @@ export default function LoginPage() {
   const handleAdminLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setAdminError("");
+
+    if (!adminPassword) {
+      setAdminError("Please enter the administrator password.");
+      return;
+    }
+
     setAdminLoading(true);
 
-    const res = await loginAdmin(selectedAdmin);
+    const res = await loginAdmin("admin1", adminPassword);
     if (res.success) {
       router.push("/admin");
     } else {
@@ -282,17 +289,26 @@ export default function LoginPage() {
           {activeTab === "admin" && (
             <form onSubmit={handleAdminLogin}>
               <div className="form-group">
-                <label className="form-label">Select Administrator Account</label>
-                <select 
-                  className="form-select"
-                  value={selectedAdmin}
-                  onChange={(e) => setSelectedAdmin(e.target.value)}
+                <label className="form-label">Administrator Account</label>
+                <input 
+                  type="text" 
+                  className="form-input" 
+                  value="Official Administrator (admin1)" 
+                  disabled 
+                  style={{ background: "#f8fafc", color: "#64748b", cursor: "not-allowed" }}
+                />
+              </div>
+
+              <div className="form-group">
+                <label className="form-label">Admin Security Password</label>
+                <input 
+                  type="password" 
+                  className="form-input" 
+                  placeholder="Enter admin password"
+                  value={adminPassword}
+                  onChange={(e) => setAdminPassword(e.target.value)}
                   disabled={adminLoading}
-                >
-                  <option value="admin1">Official Administrator 1 (Keyholder A)</option>
-                  <option value="admin2">Official Administrator 2 (Keyholder B)</option>
-                  <option value="admin3">Official Administrator 3 (Keyholder C)</option>
-                </select>
+                />
               </div>
 
               {adminError && (
