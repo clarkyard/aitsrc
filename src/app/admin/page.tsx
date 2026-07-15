@@ -548,12 +548,12 @@ export default function AdminDashboard() {
                 <button 
                   className="btn" 
                   style={{ 
-                    background: electionState?.status === "OPEN" || electionState?.status === "DECIPHERED" ? "var(--border-color)" : "#10b981", 
+                    background: electionState?.status === "OPEN" || electionState?.status === "DECIPHERED" || !electionState?.publicKey ? "var(--border-color)" : "#10b981", 
                     color: "white",
-                    cursor: electionState?.status === "OPEN" || electionState?.status === "DECIPHERED" ? "not-allowed" : "pointer"
+                    cursor: electionState?.status === "OPEN" || electionState?.status === "DECIPHERED" || !electionState?.publicKey ? "not-allowed" : "pointer"
                   }}
                   onClick={handleOpenPolls}
-                  disabled={actionLoading || electionState?.status === "OPEN" || electionState?.status === "DECIPHERED"}
+                  disabled={actionLoading || electionState?.status === "OPEN" || electionState?.status === "DECIPHERED" || !electionState?.publicKey}
                 >
                   Turn on Live
                 </button>

@@ -97,6 +97,11 @@ export async function closePolls(): Promise<void> {
 }
 
 export async function openPolls(): Promise<void> {
+  const publicKeyRecord = await prisma.electionState.findUnique({ where: { key: "public_key" } });
+  if (!publicKeyRecord || !publicKeyRecord.value) {
+    throw new Error("Cannot open polls: Election key pair has not been initialized. Please start the election first.");
+  }
+
   await prisma.electionState.upsert({
     where: { key: "polls_status" },
     update: { value: "OPEN" },
