@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { loginVoter, loginAdmin, getSession, lookupVoterEmail } from "@/lib/actions/auth";
 import { getElectionState, lookupBallotChoices } from "@/lib/actions/election";
-import { Shield, User, Lock, CheckCircle, Database, Server, Key, ArrowRight, ArrowLeft, Activity, Terminal } from "lucide-react";
+import { Shield, User, Lock, CheckCircle, Database, Server, Key, ArrowRight, Activity, Terminal } from "lucide-react";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -113,15 +113,7 @@ export default function LoginPage() {
   return (
     <main className="login-outer-wrapper animate-fade-in">
       <div className="login-gradient-card">
-        {/* Back Link */}
-        <button 
-          onClick={() => router.push("/dashboard")} 
-          className="login-back-link" 
-          style={{ background: "none", border: "none", cursor: "pointer" }}
-        >
-          <ArrowLeft size={16} />
-          <span>Dashboard</span>
-        </button>
+
 
         {/* Branding */}
         <div className="login-branding">
