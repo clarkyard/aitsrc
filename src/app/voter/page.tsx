@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { getSession, logout } from "@/lib/actions/auth";
-import { getElectionState, castVote } from "@/lib/actions/election";
+import { getSession, logout, getVoterStatus } from "@/lib/actions/auth";
+import { getElectionState, castVote, getVotersTurnout } from "@/lib/actions/election";
 import { CANDIDATES } from "@/lib/constants";
 import { 
   User, 
@@ -24,6 +24,8 @@ export default function VoterDashboard() {
   const [session, setSession] = useState<any>(null);
   const [electionState, setElectionState] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [votedCount, setVotedCount] = useState(0);
+  const [totalEligible, setTotalEligible] = useState(0);
 
   // Voting Wizard Steps
   // Step 0: Eligibility Info
@@ -67,8 +69,25 @@ export default function VoterDashboard() {
       }
       setSession(sess);
       
+      // Perform database check to see if voter has already voted
+      if (sess.studentId) {
+        const hasVoted = await getVoterStatus(sess.studentId);
+        if (hasVoted) {
+          setStep(8); // Go straight to Voted / Receipt state
+        }
+      }
+      
       const state = await getElectionState();
       setElectionState(state);
+
+      // Load turnout count to show on receipt page
+      try {
+        const turn = await getVotersTurnout();
+        setVotedCount(turn.voted);
+        setTotalEligible(turn.total);
+      } catch (err) {
+        console.error("Failed to load turnout stats:", err);
+      }
       
       setLoading(false);
     }
@@ -121,6 +140,7 @@ export default function VoterDashboard() {
       // Refresh state
       const state = await getElectionState();
       setElectionState(state);
+      setVotedCount(prev => prev + 1);
       
       // Reset session state locally to show voted screen
       setSession((prev: any) => ({
@@ -213,6 +233,24 @@ export default function VoterDashboard() {
             
             <div style={{ marginTop: "1rem", fontSize: "0.75rem", color: "var(--text-muted)", lineHeight: 1.4 }}>
               <strong>Audit Guarantee:</strong> This token is your receipt. When polls close and tallies are published, you can search for this exact token in the public audit ledger to verify your encrypted selections are included in the final results.
+            </div>
+          </div>
+
+          {/* Real-time Turnout Statistics */}
+          <div style={{ padding: "1.25rem", background: "linear-gradient(135deg, rgba(92, 96, 245, 0.04) 0%, rgba(144, 97, 249, 0.04) 100%)", borderRadius: "var(--radius-md)", border: "1px solid rgba(92, 96, 245, 0.1)", marginBottom: "2rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+            <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--brand-primary)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Live Turnout Tally</span>
+            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "0.5rem" }}>
+              <div style={{ textAlign: "center" }}>
+                <span style={{ display: "block", fontSize: "1.75rem", fontWeight: 850, color: "var(--text-main)", lineHeight: 1.1 }}>{votedCount}</span>
+                <span style={{ fontSize: "0.7rem", color: "var(--text-muted)", fontWeight: 700 }}>VOTES REGISTERED</span>
+              </div>
+              <div style={{ width: "1px", height: "36px", background: "rgba(92, 96, 245, 0.15)" }}></div>
+              <div style={{ textAlign: "center" }}>
+                <span style={{ display: "block", fontSize: "1.75rem", fontWeight: 850, color: "var(--brand-secondary)", lineHeight: 1.1 }}>
+                  {totalEligible > 0 ? Math.round((votedCount / totalEligible) * 100) : 0}%
+                </span>
+                <span style={{ fontSize: "0.7rem", color: "var(--text-muted)", fontWeight: 700 }}>PARTICIPATION RATE</span>
+              </div>
             </div>
           </div>
 

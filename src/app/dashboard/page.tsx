@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { getElectionState, getVotersTurnout, getRecentVoters, getLiveStandings } from "@/lib/actions/election";
+import { getPublicDashboardData } from "@/lib/actions/election";
 import { CANDIDATES } from "@/lib/constants";
 import { Shield, Activity, User, Sliders, ArrowLeft, RefreshCw, Lock, CheckCircle2, Laptop, Building2, HardHat, Zap, Users, ArrowUp, ArrowDown, Menu, X } from "lucide-react";
 
@@ -59,17 +59,11 @@ export default function PublicDashboard() {
 
   const loadData = async () => {
     try {
-      const state = await getElectionState();
-      setElectionState(state);
-
-      const turn = await getVotersTurnout();
-      setTurnout(turn);
-
-      const recent = await getRecentVoters();
-      setLiveVoters(recent);
-      
-      const stands = await getLiveStandings();
-      setLiveStandings(stands);
+      const data = await getPublicDashboardData();
+      setElectionState(data.state);
+      setTurnout(data.turnout);
+      setLiveVoters(data.recentVoters);
+      setLiveStandings(data.liveStandings);
     } catch (err) {
       console.error(err);
     }
@@ -82,8 +76,8 @@ export default function PublicDashboard() {
     }
     init();
 
-    // Poll live voter updates every 4 seconds in the background
-    const interval = setInterval(loadData, 4000);
+    // Poll live voter updates every 2 seconds in the background
+    const interval = setInterval(loadData, 2000);
     return () => clearInterval(interval);
   }, []);
 

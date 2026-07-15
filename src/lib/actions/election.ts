@@ -561,3 +561,29 @@ export async function resetElection(password: string): Promise<{ success: boolea
     return { success: false, error: err.message || "Failed to reset election." };
   }
 }
+
+export async function getPublicDashboardData() {
+  const state = await getElectionState();
+  const turnout = await getVotersTurnout();
+  const recentVoters = await getRecentVoters();
+  const liveStandings = await getLiveStandings();
+  
+  return {
+    state,
+    turnout,
+    recentVoters,
+    liveStandings
+  };
+}
+
+export async function getAdminDashboardData() {
+  const state = await getElectionState();
+  const turnout = await getVotersTurnout();
+  const auditTrail = await getAuditTrail();
+  
+  return {
+    state,
+    turnout,
+    auditTrail
+  };
+}

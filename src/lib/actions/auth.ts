@@ -166,3 +166,11 @@ export async function lookupVoterEmail(studentId: string): Promise<string | null
   });
   return voter ? voter.email : null;
 }
+
+export async function getVoterStatus(studentId: string): Promise<boolean> {
+  if (!studentId) return false;
+  const voter = await prisma.voter.findUnique({
+    where: { studentId }
+  });
+  return voter ? voter.hasVoted : false;
+}

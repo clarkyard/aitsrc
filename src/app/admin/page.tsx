@@ -5,14 +5,12 @@ import { useRouter } from "next/navigation";
 import { jsPDF } from "jspdf";
 import { getSession, logout } from "@/lib/actions/auth";
 import { 
-  getElectionState, 
   startElection, 
   closePolls, 
   openPolls,
   submitDecryptionShare, 
-  getAuditTrail, 
-  getVotersTurnout,
-  resetElection
+  resetElection,
+  getAdminDashboardData
 } from "@/lib/actions/election";
 import { CANDIDATES } from "@/lib/constants";
 import { 
@@ -59,14 +57,14 @@ export default function AdminDashboard() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const loadAllData = async () => {
-    const state = await getElectionState();
-    setElectionState(state);
-    
-    const turn = await getVotersTurnout();
-    setTurnout(turn);
-    
-    const trail = await getAuditTrail();
-    setAuditTrail(trail);
+    try {
+      const data = await getAdminDashboardData();
+      setElectionState(data.state);
+      setTurnout(data.turnout);
+      setAuditTrail(data.auditTrail);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
